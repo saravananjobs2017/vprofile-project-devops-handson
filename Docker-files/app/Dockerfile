@@ -1,7 +1,7 @@
 FROM openjdk:11 as BUILD_IMAGE
 WORKDIR ./Docker-file/app
 RUN sudo apt update && sudo apt install maven -y
-RUN git clone https://github.com/devopshydclub/vprofile-project.git 
+RUN git clone https://github.com/saravananjobs2017/vprofile-project-devops-handson.git 
 RUN mvn clean install
 
 
